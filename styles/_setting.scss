@@ -1,0 +1,31 @@
+//Override Ui Grid Styling
+
+
+.ui-grid-viewport{
+	font-size: $font-size;
+}
+.ui-grid-header{
+	font-size:13px;
+}
+
+input[type="text"].ui-grid-filter-input{
+	height:28px;
+}
+
+//Overide foundation Styling 
+.button{
+	font-size: $font-size;
+	margin:1rem;	
+}
+
+.top-bar{
+	margin-top:38px;
+
+	.has-dropdown{
+		ul,li{
+			width:100%;
+		}
+	}
+}
+
+

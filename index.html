@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- endbuild -->
+  </head>
+  <body ng-app="stateStreetPrototypeApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header>
+       <a class="header-brand" href="#"></a>
+       <span>Consolidation and Combination</span>
+       <section>
+        Welcome: p981657 <a href="#">logout</a>
+       </section>
+    </header>
+   
+
+    <section>
+      <nav class="clearfix top-bar" data-topbar role="navigation">
+        <section class="top-bar-section" ng-controller="TabsCtrl">
+          <ul class="title-area">
+            <li class="has-dropdown" ng-repeat="title in menuItems">
+              <a dropdown-toggle="#dropdown-example-{{title.id}}" ui-sref="root" ng-cloak>{{title.name}}</a>
+              <ul class="dropdown" id="dropdown-example-{{title.id}}">
+                <li ng-repeat="subtitle in title.subMenu">
+                  <a ng-click="selectionChange(title.id,subtitle.key)" ui-sref="root.{{subtitle.url}}">
+                    {{subtitle.name}}
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <div class="table-view" ui-view></div>
+    <section>
+  
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-foundation/mm-foundation-tpls.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-ui-router.stateHelper/statehelper.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/service/service.js"></script>
+    <script src="scripts/controllers/tabs-controller.js"></script>
+    <script src="scripts/controllers/cnc-table-controller.js"></script>
+    <script src="scripts/controllers/fund-hierarchy-controller.js"></script>
+    <script src="scripts/controllers/add-funds-modal-controller.js"></script> 
+
+    
+    
+    <!-- endbuild -->
+</body>
+</html>

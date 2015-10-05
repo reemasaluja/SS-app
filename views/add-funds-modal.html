@@ -1,0 +1,14 @@
+<div>
+    <h3>Add funds</h3>
+    <form name="cnc-addFunds">
+	    <input type="text" placeholder="master fund Name" ng-model="name" ng-required='true'/>
+	    <input type="text" placeholder="master fund Code" ng-model="code" ng-required='true'/>
+	    <input type="text" placeholder="master fund Type" ng-model="type" ng-required='true'/>
+	    <input type="text" placeholder="Allocation" ng-model="allocation" ng-required='true'/>
+	    <input type="text" placeholder="start date" ng-model="startDate" ng-required='true'/>
+	    <input type="text" placeholder="end date" ng-model="endDate" ng-required='true'/>
+	    <input type="text" placeholder="proportional Type" ng-model="ptype" ng-required='true'/>
+
+    <button class="button" type="submit" ng-click="cnc-addFunds.$valid && add()">Add</button>
+    <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+</div>

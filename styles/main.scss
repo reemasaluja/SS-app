@@ -1,0 +1,60 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+//Config
+@import "variable";
+
+//foundation
+@import "../../bower_components/foundation/scss/foundation.scss";
+
+// Logo Image
+$image-path: '../../images/company-logo' ;
+$extention: 'jpg'; // need to change
+
+//Mixins
+@import "mixins";
+
+//Nav Styles
+@import "nav";
+
+//Foundation setting
+@import "setting";
+
+//table Styles
+@import "table";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.ng-touched.ng-invalid-required {
+    border-color: red;
+}
+
+.ng-dirty.ng-invalid {
+  border-color: red;
+}
+
+.ng-untouched.ng-invalid {
+    border-color: #ccc; 
+}
+.ng-submitted input.ng-invalid{
+    border-color: red;
+}
+
+
+
+
+
+

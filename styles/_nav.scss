@@ -1,0 +1,43 @@
+header{
+	color: $white;
+	background-color: $header-color;
+	line-height: 0.8;
+
+	section{
+		float: right;
+		margin-top: 33px;
+		font-variant: small-caps;
+		margin-right: 40px;
+
+		a{
+			border-left: 1px solid #ccc;
+			padding-left: 8px;
+			vertical-align: top;
+		}
+	}
+
+
+	span{
+		vertical-align: super;
+		font-size: 22px;
+		font-variant: small-caps;
+	}
+
+	.header-brand{
+		@include background-image('state-street-logo');
+	  	padding: 0px 15px 0px 15px;
+		display: inline-block;
+		height: 50px;
+		background-size: contain;
+		background-position: -1px 0px;
+		width: 200px;
+
+		&:hover,&:visited,&:active{ 
+			text-decoration:none;
+			color:$white;
+		}
+	}
+}
+
+
+
