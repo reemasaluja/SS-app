@@ -1,0 +1,42 @@
+.filter-form form{
+    padding:25px;
+}
+
+.filter-form h3{
+    padding-left:25px;
+}
+
+.filter-form ul{
+    margin-left:0px;
+    width:100%;
+}
+.filter-form label{
+    margin-top: 10px;
+    font-size:12px;
+}
+
+.filter-form li{
+    position: relative;
+    width: 15%;
+    float: left;
+    padding-right: 2%;
+}
+
+.filter-form .fi-calendar{
+    position: absolute;
+    right: 12%;
+    top: 44%;
+}
+
+.filter-form input{
+    width:100%;
+}
+
+.filter-form .button{
+    margin: 1px 0 0 14px;
+    width: 9%;
+}
+
+.filter-form li.date-container{
+    width:22%;
+}

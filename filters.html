@@ -1,0 +1,37 @@
+
+<section class="filter-form">
+    <h3>Please select criteria to see Data</h3>
+    <form name="cncViewData">
+        <ul>
+            <li class ="clearfix">
+                <label for="view-data-system">System:</label>
+                <input type="text" id="view-data-system" placeholder="System" ng-model="model.system" ng-required='true'/>
+            </li>
+            <li class ="clearfix">
+                <label for="view-data-file-type">File Type:</label>
+                <input type="text" id="view-data-file-type" placeholder="File Type" ng-model="model.fileType" ng-required='true' />
+            </li>
+            <li class ="clearfix">
+                <label for="view-data-fundCode">Fund Code:</label>
+                <input type="text" id="view-data-fundCode" placeholder="Fund Code" ng-model="model.fundCode"/>
+            </li>
+            <li class ="clearfix date-container">
+                <label for="view-data-startDate">Start Date:</label>
+                <input type="date" id="view-data-startDate" placeholder="yyyy/mm/dd" ng-model="model.startDate" ng-required='true' />
+                <i class ="fi-calendar"></i>
+            </li>
+            <li class ="clearfix date-container">
+                <label for="view-data-endDate">End Date:</label>
+                <input type="date" id="view-data-endDate" placeholder="yyyy/mm/dd" ng-model="model.endDate"  ng-required='true'/>
+                <i class ="fi-calendar"></i>
+            </li>
+
+        </ul>
+        <button class="button" type="submit" ng-click="showResult()" ng-disabled="cncViewData.$invalid" >Show Result</button>
+    </form>
+</section>
+
+
+<section ng-if="isDataAvailable">
+    <div ui-grid="gridOptions" class="grid" ui-grid-move-columns ui-grid-resize-columns  ui-grid-edit ></div>
+</section>

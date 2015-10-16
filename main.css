@@ -1,0 +1,91 @@
+//Elements setting
+//Standard
+
+html,body {
+  padding: 0;
+  margin: 0;
+  font-size:12px;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-size: inherit;
+    font-weight:bold;
+}
+
+body{
+    position:relative;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+section,header,footer,article{
+    display:block;
+}
+
+li{
+    list-style: none;
+    outline:none;
+}
+
+a{
+    text-decoration:none;
+    outline: 0;
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+.ng-touched.ng-invalid-required {
+  border-color: red;
+}
+
+.ng-dirty.ng-invalid {
+  border-color: red;
+}
+
+.ng-untouched.ng-invalid {
+  border-color: #ccc;
+}
+
+
+.ng-submitted input.ng-invalid {
+  border-color: red;
+}
+
+.error{
+    color:red;
+    padding:10px;
+    font-weight:bold;
+}
+
+footer{
+	width : 100%;
+    height: 100px;
+    text-align: right;
+    padding: 10px 10px 0px 10px;
+    background-color: #002c5f;
+    border-top:solid 1px #716250;
+    color:#fff;
+    font-size: 12px;
+    position: relative;
+    bottom: -20px;
+    margin-top: 25px;
+}
+
+input[type="text"],input[type='date']{
+    height:35px;
+}
+
+
