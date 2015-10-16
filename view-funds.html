@@ -1,0 +1,12 @@
+<p class="error">{{ message }}</p>
+<p class="text-center">{{ title }}</p>
+
+<!-- temporary -->
+<button class="button" ng-click="open(1)">Add Master Funds</button>
+
+<button class="button" ng-click="open(0)" ng-disabled="!showEditButton">Add Subsidiary Funds</button>
+
+<section ng-if="isDataAvailable">
+    <div ui-grid="gridOptions" class="grid" ui-grid-tree-view ui-grid-selection ui-grid-resize-columns></div>
+</section>
+

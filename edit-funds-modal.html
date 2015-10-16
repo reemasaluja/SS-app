@@ -1,0 +1,37 @@
+<section class="funds-modal">
+<h3>Add funds</h3>
+    <input type="text" value ={{parentFundCode}} ng-model="parentFundCode" readOnly/>
+
+    <div class="switch round tiny">
+        <input id="addSubsidiary" type="checkbox" ng-model="model.checked" />
+        <label for="addSubsidiary"></label>
+        <span> Add Subsidiary Funds </span>
+    </div>
+    <form name="cncEditFunds"  ng-if="showAddSubsidiaryForm">
+        <ul class="clearfix">
+            <li>
+                <input type="text" placeholder="Fund code" ng-model="model.fundCode"/>
+            </li>
+            <li>
+                <input type="text" placeholder="Fund Type" ng-model="model.fundType" ng-required='true'/>
+            </li>
+            <li>
+                <input type="number" placeholder="Allocation" ng-model="model.allocationPercentage" ng-required='true' />
+            </li>
+            <li>
+                <input type="text" placeholder="proportional Type" ng-model="model.proportionalType" ng-required='true' />
+            </li>
+            <li>
+                <input type="date" placeholder="yyyy/mm/dd" ng-model="model.startDate"  ng-required='true'/>
+                <i class ="fi-calendar"></i>
+            </li>
+            <li>
+                <input type="date" placeholder="yyyy/mm/dd" ng-model="model.endDate" ng-required='true' />
+                <i class ="fi-calendar"></i>
+            </li>
+
+        </ul>
+    <button class="button" type="submit" ng-click="add()" ng-disabled="cncEditFunds.$invalid">Add & Save</button>
+    <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+</form>
+</section>

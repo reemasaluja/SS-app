@@ -1,0 +1,38 @@
+.funds-modal form .button{
+  font-size: 12px;
+  margin: 0.1rem 0 0 0;
+}
+
+.funds-modal form ul {
+    margin:0em;
+}
+
+.funds-modal form li{
+    position:relative;
+    width: 42%;
+    float: left;
+}
+
+.funds-modal form li .fi-calendar{
+    position: absolute;
+    left: 90%;
+    z-index: 2;
+    top: 3px;
+    font-size:20px;
+}
+
+.funds-modal form li:nth-child(even) {
+   margin-left: 15%;
+}
+.funds-modal form li:nth-child(odd){
+    clear:both
+}
+
+.round span{
+    font-size: 12px;
+    vertical-align: super;
+}
+
+.addSubsidiaryFunds ul{
+    margin-left:0px;
+}
