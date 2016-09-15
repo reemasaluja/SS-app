@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('stateStreetPrototypeApp')
+angular.module('PrototypeApp')
 	.controller('TableCtrl',['$scope', function($scope) {
 	    $scope.grid = true;
 

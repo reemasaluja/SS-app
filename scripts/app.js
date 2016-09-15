@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name stateStreetPrototypeApp
+ * @name PrototypeApp
  * @description
- * # stateStreetPrototypeApp
+ * # PrototypeApp
  *
  * Main module of the application.
  */
 window.CNC_APP = angular
-  .module('stateStreetPrototypeApp', [
+  .module('PrototypeApp', [
     'ngRoute',
     'ui.grid',
     'ui.grid.edit',

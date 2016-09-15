@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('stateStreetPrototypeApp')
+angular.module('PrototypeApp')
   .factory('dataService',['$rootScope','$timeout', function($rootScope,$timeout) {
     var tableData = {};
 

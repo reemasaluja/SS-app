@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('stateStreetPrototypeApp').controller('FundTableCtrl', function ($scope,$modal) {
+angular.module('PrototypeApp').controller('FundTableCtrl', function ($scope,$modal) {
 	// Temporary Data
 	var fundData =[
 		{

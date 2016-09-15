@@ -2,10 +2,10 @@
 
 /**
  * @ngdoc function
- * @name stateStreetPrototypeApp.controller:TabsCtrl
+ * @name PrototypeApp.controller:TabsCtrl
  * @description
  * # TabsCtrl
- * Controller of the stateStreetPrototypeApp
+ * Controller of the PrototypeApp
  */
 
 window.CNC_APP.controller('TabsCtrl',['$scope','$state','dataService',function ($scope,$state,dataService) {

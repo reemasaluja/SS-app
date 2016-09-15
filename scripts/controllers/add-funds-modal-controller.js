@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('stateStreetPrototypeApp')
+angular.module('PrototypeApp')
 	.controller('AddFundsModalCtrl',['$scope','$modalInstance',function($scope, $modalInstance) {
 
 		$scope.add = function () {
@@ -13,7 +13,7 @@ angular.module('stateStreetPrototypeApp')
 	            "allocationPercentage": this.allocation,
 	            "startDate": this.startDate,
 	            "endDate": this.endDate,
-	            "isConsolidated": null, //need to discuss nirav
+	            "isConsolidated": null, 
 	            "status": 'ACTIVE',
 				'fundCodes':[]
 			};
